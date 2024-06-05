@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Luffy",
+        "precio": 300000000,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_725779-MLM73049658469_112023-O.webp",
+        "stock": true
+    },
+    {
+        "id": 2,
+        "nombre": "Zoro",
+        "precio": 120000000,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_741108-MLM49482707105_032022-O.webp",
+        "stock": true
+    },
+    {
+        "id": 3,
+        "nombre": "Sanji",
+        "precio": 77000000,
+        "imagen": "https://masonlineprod.vtexassets.com/arquivos/ids/310461-800-auto?v=638382729960270000&width=800&height=auto&aspect=true",
+        "stock": false
+    },
+    {
+        "id": 4,
+        "nombre": "Chopper",
+        "precio": 50,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_608490-MLA43666480793_102020-O.webp",
+        "stock": true
+    }
+]

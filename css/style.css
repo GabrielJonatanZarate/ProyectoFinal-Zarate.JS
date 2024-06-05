@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-image: radial-gradient(brown, yellow);
+}
+
+.container {
+    display: grid;
+    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: solid 1px black;
+    background-color: green;
+    height: 22rem;
+    width: 13rem;
+}
+
+.no-card {
+    background-color: red;
+    border: solid 1px black;
+    height: 22rem;
+    width: 13rem;
+}
+
+.img {
+    padding: 1.2rem;
+    width: 13rem;
+    height: 18rem;
+}
+
+.a {
+    display: flex;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.navegacion img {
+    width: 200px;
+    height: 200px;
+}
+
+.btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    background-image: radial-gradient(rgb(228, 228, 172), rgb(199, 131, 131));
+}
+
+.footer {
+    background-image: radial-gradient(rgb(228, 228, 172), rgb(199, 131, 131));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    background-color: white;
+}
+.footer h3:hover{
+    color: white;
+    background-color: black;
+}
