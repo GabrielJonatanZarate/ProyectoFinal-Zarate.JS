@@ -105,19 +105,30 @@ function quitarDelCarrito(id) {
   });
 }
 
-// Función para mostrar u ocultar el carrito
-function mostrarOcultar(estadoActual) {
-  if (estadoActual) {
-    mostrar = false;
-    botonMostrarOcultar.innerText = "Mostrar"
-    divCarrito.innerHTML = "";
+
+let mostrarCarrito = true; 
+
+function mostrarOcultar() {
+  const divCarrito = document.getElementById("carrito");
+  const btnMostrarOcultar = document.getElementById("btn-mostrar-ocultar");
+
+  if (mostrarCarrito) {
+    divCarrito.style.display = "none";
+    btnMostrarOcultar.innerText = "Mostrar carrito";
   } else {
-    divCarrito.innerHTML = "";
-    botonMostrarOcultar.innerText = "Ocultar"
-    mostrar = true;
-    carrito.forEach(el => crearCard(el, "carrito"));
+    divCarrito.style.display = "block";
+    btnMostrarOcultar.innerText = "Ocultar carrito";
   }
+
+  mostrarCarrito = !mostrarCarrito; 
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const btnMostrarOcultar = document.getElementById("btn-mostrar-ocultar");
+  btnMostrarOcultar.onclick = mostrarOcultar;
+});
+
+
 
 
 fetch('./js/data.json')
